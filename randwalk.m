@@ -1,4 +1,7 @@
 function [v] = randwalk(g,N)
+% Implementation of random walk on networks
+% Input: g is a graph (MATLAB object) and N is the number of steps in the random walk. v is vector representing the nodes visited.
+% Alternatively use g=graph(A) to create graph object from adjacency matrix A.
 A=full(adjacency(g));
 n=numnodes(g);
 init=randi(n);
